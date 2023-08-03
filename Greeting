@@ -1,0 +1,6 @@
+name = input()
+while not name == "Johnny":
+    print(f"Hello, {name}!")
+    name = input()
+else:
+    print("Hello, my love!")

@@ -1,0 +1,6 @@
+n = int(input())
+result = []
+for i in range(n):
+    names = input()
+    result.append(names)
+print(result)

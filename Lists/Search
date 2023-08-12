@@ -1,0 +1,12 @@
+n = int(input())
+word = input()
+string_1 = []
+strings_2 = []
+
+for i in range (n):
+    strings = input()
+    string_1.append(strings)
+    if word in strings:
+        strings_2.append(strings)
+print(string_1)
+print(strings_2)

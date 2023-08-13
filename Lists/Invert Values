@@ -1,0 +1,7 @@
+list_of_strings = input().split(" ")
+list_of_numbers = []
+for i in list_of_strings:
+    list_of_numbers.append(int(i))
+for n in range(len(list_of_numbers)):
+    list_of_numbers[n] = -list_of_numbers[n]
+print(list_of_numbers)

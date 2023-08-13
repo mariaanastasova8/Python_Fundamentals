@@ -1,0 +1,26 @@
+n = int(input())
+result = []
+filter = []
+
+for i in range(n):
+    number = int(input())
+    result.append(number)
+command = input()
+if command == "even":
+    for n in result:
+        if n % 2 == 0:
+            filter.append(n)
+elif command == "odd":
+    for n in result:
+        if n % 2 != 0:
+            filter.appemd(n)
+elif command == "negative":
+    for n in result:
+        if n < 0:
+            filter.append(n)
+elif command == "positive":
+    for n in result:
+        if n >= 0:
+            filter.append(n)
+
+print(filter)

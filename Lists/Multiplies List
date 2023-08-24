@@ -1,0 +1,9 @@
+number = int(input())
+counter = int(input())
+
+multiply_list = []
+
+for n in range(1, counter + 1):
+    multiply_list.append(n * number)
+
+print(multiply_list)

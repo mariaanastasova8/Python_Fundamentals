@@ -1,0 +1,25 @@
+cards = input().split(" ")
+count_players = 0
+TEAM_A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+TEAM_B = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+new_A = []
+new_B = []
+len_A = 11
+len_B = 11
+for x in cards:
+    team, player_count = x.split("-")
+    player_count = int(player_count)
+    if len_A < 7 or len_B < 7:
+
+        print(f"Team A - {len_A}; Team B - {len_B}")
+        print("Game was terminated")
+        break
+
+    if team == "A":
+        new_A.append(player_count)
+        len_A -= 1
+    else:
+        new_B.append(player_count)
+        len_B -= 1
+else:
+    print(f"Team A - {len_A}; Team B - {len_B}")

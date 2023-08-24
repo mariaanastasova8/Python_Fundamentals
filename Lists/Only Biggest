@@ -1,0 +1,13 @@
+numbers = input().split(" ")
+list_numbers = []
+
+for el in numbers:
+    number = int(el)
+    list_numbers.append(number)
+
+counter = int(input())
+
+for num in range(counter):
+    list_numbers.remove(min(list_numbers))
+    
+print(list_numbers)
